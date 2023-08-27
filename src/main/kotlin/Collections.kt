@@ -98,5 +98,23 @@ fun main() {
 
     // para checkear si un item pertenece al map, usa la funcion containsKey()
     println(readOnlyJuiceMenu.containsKey("apple"))
+
+    // para obtener las key o values de un map, usa las propiedades keys y values respectivamente
+    println(readOnlyJuiceMenu.keys)
+    println(readOnlyJuiceMenu.values)
+
+    // para cheackear si un key o value pertenece al map usa el operador in
+    println("orange" in readOnlyJuiceMenu.keys)
+    println(200 in readOnlyJuiceMenu.values)
+
+
+    println("----------------")
+    // Exercises 3:
+    // De la lista green y read, devuelve la cantidad de numeros que hay en total
+    val greenNumbers = listOf(1, 4, 23)
+    val redNumbers = listOf(17, 2)
+
+    // sol
+    println("Hay un total de ${greenNumbers.count() + redNumbers.count()}")
 }
 
